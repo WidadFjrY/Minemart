@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../script/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../assets/icon.png" />
+    <title>Minemart | Daftar</title>
+  </head>
+  <body
+    class="relative px-5 pb-10 pt-5 font-Inter lg:container lg:m-auto lg:flex lg:h-max lg:flex-row lg:p-5 lg:py-[52px]"
+  >
+    <!-- LOGO -->
+    <div class="lg:my-52 lg:mx-10 lg:basis-1/2 lg:p-5">
+      <img
+        src="../assets/logo.png"
+        class="m-auto w-32 duration-700 ease-in-out hover:-rotate-3 hover:scale-105 lg:w-52"
+        alt="Minemart"
+      />
+    </div>
+
+    <!-- FORM LOGIN -->
+    <div
+      class="m-auto mt-10 max-w-md rounded-md border p-10 sm:mt-10 md:m-auto md:mt-10 lg:m-auto lg:mt-auto lg:basis-1/2 lg:scale-110"
+    >
+      <h1 class="font-bold text-slate-700">Daftar</h1>
+      <span class="text-xs text-slate-700"
+        >Sudah punya akun? Ayo
+        <a href="../index.html" class="text-sky-500 hover:underline"
+          >masuk</a
+        ></span
+      >
+      <div>
+        <form class="container mt-5">
+          <!-- USERNAME -->
+          <div class="inputBox mb-3">
+            <input type="text" required="required" />
+            <span>Username</span>
+          </div>
+          <!-- EMAIL -->
+          <div class="inputBox mb-3">
+            <input type="text" required="required" />
+            <span>Email</span>
+          </div>
+          <!-- PASSWORD -->
+
+          <div class="inputBox">
+            <input
+              type="password"
+              required="required"
+              onkeyup="Password()"
+              id="password"
+            />
+            <span id="placeholde">Kata Sandi</span>
+            <p class="ml-1 text-xs text-scondary-0" id="valid"></p>
+            <label for="visibility"
+              ><img
+                src="../assets/mata.png"
+                class="absolute top-[17px] right-[15px] hidden w-7 cursor-pointer"
+                id="eyes"
+                onclick="Eyes()"
+            /></label>
+            <label for="visibility"
+              ><img
+                src="../assets/mata tutup.png"
+                class="absolute top-[15px] right-[15px] w-7 cursor-pointer"
+                id="eyes2"
+                onclick="Eyes()"
+            /></label>
+            <input
+              type="checkbox"
+              name="visibility"
+              id="visibility"
+              class="hidden"
+              onclick="Visibility()"
+            />
+            <p class="mb-3 ml-1 text-xs text-slate-700" id="valid"></p>
+          </div>
+
+          <!-- REPASSWORD -->
+          <div class="inputBox">
+            <input
+              type="password"
+              required="required"
+              onkeyup="Validate()"
+              id="password ulang"
+            />
+            <span id="placeholde">Ulangi Kata Sandi</span>
+            <p class="ml-1 text-xs text-scondary-0" id="valid"></p>
+            <label for="visibility1"
+              ><img
+                src="../assets/mata.png"
+                class="absolute top-[17px] right-[15px] hidden w-7 cursor-pointer"
+                id="eyes3"
+                onclick="Eyes1()"
+            /></label>
+            <label for="visibility1"
+              ><img
+                src="../assets/mata tutup.png"
+                class="absolute top-[15px] right-[15px] w-7 cursor-pointer"
+                id="eyes1"
+                onclick="Eyes1()"
+            /></label>
+            <input
+              type="checkbox"
+              name="visibility1"
+              id="visibility1"
+              class="hidden"
+              onclick="Visibility1()"
+            />
+            <p class="mb-3 ml-1 text-xs text-slate-700" id="validate"></p>
+          </div>
+
+          <!-- NO HP -->
+          <div class="inputBox mb-3">
+            <input type="number" required="required" />
+            <span>No HP (Opsional)</span>
+          </div>
+        </form>
+        <!-- S&K -->
+        <div class="mx-2 mt-1 flex">
+          <input type="checkbox" name="checkbox" id="checkbox" class="mr-2" />
+
+          <label for="checkbox" class="cursor-pointer text-xs text-slate-700"
+            >Saya menyetujui syarat dan ketentuan</label
+          >
+        </div>
+        <!-- BUTTON DAFTAR -->
+        <div>
+          <button
+            type="submit"
+            class="container mt-3 rounded-md border px-4 py-1 text-sm font-bold text-scondary-0 duration-300 hover:bg-Primary-0 hover:text-white hover:ease-out focus:bg-sky-300 focus:text-white focus:ring-1"
+          >
+            Daftar
+          </button>
+        </div>
+        <span class="m-auto flex place-content-center py-2 text-center text-xs"
+          >Atau</span
+        >
+      </div>
+      <!-- LOGIN WITH SOCIAL MEDIA -->
+      <div class="flex">
+        <div
+          class="m-auto mr-5 flex cursor-pointer rounded-md border px-3 py-2 duration-300 hover:shadow-md hover:ease-out"
+        >
+          <img src="../assets/facebook.png" alt="" class="mr-2 w-7" />
+          <span class="m-auto text-sm font-bold text-slate-400">Facebook</span>
+        </div>
+        <div
+          class="m-auto ml-5 flex cursor-pointer rounded-md border px-5 py-2 duration-300 hover:shadow-md hover:ease-out"
+        >
+          <img src="../assets/google.png" alt="" class="mr-2 w-7" />
+          <span class="m-auto text-sm font-bold text-slate-400">Google</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="fixed right-6 bottom-6 cursor-pointer duration-700 ease-in-out hover:scale-110 hover:opacity-80"
+    >
+      <img src="../assets/Bantuan.png" alt="" class="w-14" />
+    </div>
+  </body>
+</html>
