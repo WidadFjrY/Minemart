@@ -609,16 +609,8 @@ video {
   margin-left: 0.25rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
 }
 
 .mr-4 {
@@ -633,12 +625,16 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .flex {
@@ -812,7 +808,7 @@ video {
   position: absolute;
   left: 0;
   color: #e2e8f0;
-  padding: 11px;
+  padding: 12px;
   pointer-events: none;
   font-size: 0.9em;
   transition: 0.5s;
