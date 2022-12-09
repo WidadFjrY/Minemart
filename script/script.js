@@ -38,7 +38,7 @@ function Password(){
 
     if(input.length < 8){
         document.getElementById("password").style.border = "thin #ec4899 solid";
-        document.getElementById("valid").innerText = "Lebih dari 8 karakter"
+        document.getElementById("valid").innerText = "Harus lebih dari 8 karakter"
         document.getElementById("valid").style.color = "#ec4899"
     } else if(!input.match(/[0-9]/i)){
         document.getElementById("password").style.border = "thin #ec4899 solid";
