@@ -1,3 +1,34 @@
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+
+window.onload = function () {
+    let count = 60*60;
+    display = document.getElementById("clockCounter")
+    startTimer(count, display)
+};
+
+let price = 60000;
+let diskon = 90;
+let bil = (60000 / 90) * 100;
+
+
+console.log(bil)
+
 function Visibility(){
     let sandi = document.getElementById("password");
     if (sandi.type === "password"){
@@ -72,4 +103,30 @@ function Validate(){
         document.getElementById("validate").innerText = ""
     }
 }
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   if (n > x.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = x.length} ;
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   x[slideIndex-1].style.display = "inline block";
+// }
+
+
+
+
+
+
 

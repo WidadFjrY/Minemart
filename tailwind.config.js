@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Inter: ["Inter"]
+        Inter: ["Inter"],
+        Kodchasan: ["Kodchasan"]
       },
       colors: {
         Primary: ["#0ea5e9"],

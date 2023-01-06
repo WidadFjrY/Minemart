@@ -1,0 +1,24 @@
+  <div class="card">
+      <div class="poster">
+        <img src="./assets/Produk/TAS-1.jpg" alt="" />
+        <div class="details">
+          <p class="judul font text-2xl font-bold text-sky-400">Hand Bag</p>
+          <h3>Tas Selempang Wanita</h3>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>4/5</span>
+          </div>
+          <div class="tags">
+            <span>Fashion</span>
+            <span>Life Style</span>
+          </div>
+          <div class="harga">
+            <p>Rp.199.000,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
